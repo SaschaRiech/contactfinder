@@ -9,7 +9,9 @@
 import requests\
 import re\
 \
-SERPAPI_API_KEY = "YOUR_SERPAPI_API_KEY"\
+import streamlit as st
+SERPAPI_API_KEY = st.secrets["SERPAPI_API_KEY"]
+\
 \
 def serpapi_search(query):\
     params = \{\
